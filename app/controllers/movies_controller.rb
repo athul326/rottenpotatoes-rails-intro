@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
         @all_ratings[rate] = 0
       end
       @movies = Movie.where(rating: params[:ratings].keys)
-      rating.each do |rate,value|
+      ratings.each do |rate,value|
         @all_ratings[rate] = 1
       end
     end
