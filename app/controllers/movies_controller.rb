@@ -15,8 +15,10 @@ class MoviesController < ApplicationController
     case params[:sort]
     when 'title'
       @movies = Movie.order('title ASC')
+      @hilite_t = 'hilite'
     when 'release_date'
       @movies = Movie.order('release_date')
+      @hilite_rd = 'hilite'
     end
   end
 
