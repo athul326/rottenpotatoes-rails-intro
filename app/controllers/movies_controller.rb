@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
-    @all_ratings = {'G'=> 1,'PG'=> 1,'PG-13'=> 1,'R'=> 1}
+    @all_ratings = Movie.all_ratings
     if params[:ratings]
       @all_ratings.each do |rate,value|
         @all_ratings[rate] = 0
