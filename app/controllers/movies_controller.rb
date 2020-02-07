@@ -31,7 +31,7 @@ class MoviesController < ApplicationController
     elsif session[:rating].present? then
       redirect_to movies_path(session)
     else
-      @movies = Movie.where(rating: all_ratings).order(params[:sort])
+      @movies = Movie.where(rating: @all_ratings).order(params[:sort])
     end
     
   end
