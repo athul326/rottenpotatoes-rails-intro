@@ -11,21 +11,12 @@ class MoviesController < ApplicationController
   end
 
   def index
+    session.update(params)
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    hash = Hash.new
-    
-    
-    if (!params[:ratings].present? && session[:ratings].present?) || (!params[:sort].present? && session[:sort].present?)
-      if session[:ratings].present? && session[:sort].present?
-        hash = {:ratings => session[:ratings],:sort => session[:sort]}
-      elsif session[:ratings].present?
-        hash = {:ratings => session[:ratings]}
-      elsif session[:sort].present?
-        hash = {:sort => session[:sort]}
-      end
+    if(params[:sort]==nil or params[:ratings]==nil) then
       flash.keep
-      redirect_to movies_path(params.merge(hash))
+      redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]})
     end
     
     if params[:ratings]
@@ -41,9 +32,6 @@ class MoviesController < ApplicationController
       @movies = Movie.order('release_date')
       @hilite_rd = 'hilite'
     end
-    
-    session[:ratings] = params[:ratings]
-    session[:sort] = params[:sort]
   end
 
   def new
