@@ -11,7 +11,6 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
     hash = Hash.new
