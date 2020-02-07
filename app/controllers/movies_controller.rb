@@ -14,14 +14,14 @@ class MoviesController < ApplicationController
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
     @sort = params[:sort] || session[:sort]
-    @rate = params[:rating] || session[:rating]
+    @rate = params[:ratings] || session[:ratings]
     session[:sort] = @sort
-    session[:rating] = @rate
+    session[:ratings] = @rate
     
     
     @movies = Movie.order(@sort)
     if @rate.present? then
-      @movies = Movie.where(:rating => @rate.keys).order(@sort)
+      @movies = Movie.where(:ratings => @rate.keys).order(@sort)
       @selectedratings = @rate.keys
     
     end
