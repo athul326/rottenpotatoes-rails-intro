@@ -14,7 +14,7 @@ class MoviesController < ApplicationController
     session.update(params)
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    if params[:sort]==nil or params[:ratings]==nil then
+    if (params[:sort]==nil or params[:ratings]==nil) then
       flash.keep
       redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]})
     end
@@ -26,7 +26,7 @@ class MoviesController < ApplicationController
         else
           @movies = Movie.order('title ASC')
         end
-      @hilite_t = 'hilite'
+        @hilite_t = 'hilite'
       elsif session[:sort] == 'release_date' then
         if session[:ratings].present? then
           @movies = Movie.where(rating: session[:ratings].keys).order('release_date')
@@ -37,6 +37,7 @@ class MoviesController < ApplicationController
       end
     else
       if session[:ratings].present? then
+        @selectedratings = session[:ratings].keys
         @movies = Movie.where(rating: session[:ratings].keys)
       else
         @movies = Movie.all
