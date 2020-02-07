@@ -14,15 +14,19 @@ class MoviesController < ApplicationController
     @movies = Movie.all
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
+    hash = Hash.new
+    if (!params[:ratings].present? && session[:ratings].present?) || (!params[:sort].present? && session[:sort].present?)
+      if session[:ratings].present?
+        hash = {:ratings => session[:ratings]}
+      end
+      if session[:sort].present?
+        hash = {:sort => session[:sort]}
+      end
+      redirect_to movies_path(params.merge(hash))
+    end
     if params[:ratings]
-      #@all_ratings.each do |rate,value|
-      #  @all_ratings[rate] = 0
-      #end
       @selectedratings = params[:ratings].keys
       @movies = Movie.where(rating: params[:ratings].keys)
-      #params[:ratings].each do |rate,value|
-      #  @all_ratings[rate] = 1
-      #end
     end
     case params[:sort]
     when 'title'
@@ -32,6 +36,8 @@ class MoviesController < ApplicationController
       @movies = Movie.order('release_date')
       @hilite_rd = 'hilite'
     end
+    session[:ratings] = params[:ratings]
+    session[:sort] = params[:sort]
   end
 
   def new
