@@ -15,6 +15,8 @@ class MoviesController < ApplicationController
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
     hash = Hash.new
+    
+    
     if (!params[:ratings].present? && session[:ratings].present?) || (!params[:sort].present? && session[:sort].present?)
       if session[:ratings].present?
         hash = {:ratings => session[:ratings]}
@@ -24,18 +26,21 @@ class MoviesController < ApplicationController
       end
       redirect_to movies_path(params.merge(hash))
     end
+    
     if params[:ratings]
       @selectedratings = params[:ratings].keys
       @movies = Movie.where(rating: params[:ratings].keys)
     end
-    case params[:sort]
-    when 'title'
+    
+    if params[:sort] == 'title'
       @movies = Movie.order('title ASC')
       @hilite_t = 'hilite'
-    when 'release_date'
+    end
+    if params[:sort] == 'release_date'
       @movies = Movie.order('release_date')
       @hilite_rd = 'hilite'
     end
+    
     session[:ratings] = params[:ratings]
     session[:sort] = params[:sort]
   end
