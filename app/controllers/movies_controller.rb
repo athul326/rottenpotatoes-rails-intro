@@ -13,25 +13,15 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    if params[:sort].present? then
-      if params[:sort] == 'title' then
-        @movies = Movie.order('title ASC')
-      elsif params[:sort] == 'release_date' then
-        @movies = Movie.order('release_date')
-      end
-      session[:sort] = params[:sort]
-    elsif session[:sort].present? then
-      redirect_to movies_path(params.merge(session))
-    end
+    @sort = params[:sort] || session[:sort]
+    @rate = params[:rating] || session[:rating]
+    session[:sort] = @sort
+    session[:rating] = @rate
     
-    if params[:rating].present? then
-      @selectedratings = params[:ratings].keys
-      @movies = Movie.where(rating: params[:ratings].keys)
-      session[:rating] = params[:rating]
-    elsif session[:rating].present? then
-      redirect_to movies_path(params.merge(session))
+    if @rate.present? then
+      @movies = Movie.where(rating: @rate.keys).order(@sort)
     else
-      @movies = Movie.where(rating: @all_ratings).order(params[:sort])
+      @movies = Movie.order(@sort)
     end
     
   end
