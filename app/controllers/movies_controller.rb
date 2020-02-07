@@ -18,10 +18,12 @@ class MoviesController < ApplicationController
     session[:sort] = @sort
     session[:rating] = @rate
     
+    
+    @movies = Movie.order(@sort)
     if @rate.present? then
       @movies = Movie.where(rating: @rate.keys).order(@sort)
-    else
-      @movies = Movie.order(@sort)
+      @selectedratings = @rate.keys
+    
     end
     
   end
