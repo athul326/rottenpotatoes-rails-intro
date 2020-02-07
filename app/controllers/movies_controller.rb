@@ -41,7 +41,7 @@ class MoviesController < ApplicationController
     else
       if params[:ratings].present? then
         @selectedratings = params[:ratings].keys
-        @movies = Movie.where(rating: session[:ratings].keys)
+        @movies = Movie.where(rating: params[:ratings].keys)
         session[:ratings] = params[:ratings]
       elsif session[:ratings].present? then
           redirect_to movies_path(session)
