@@ -11,34 +11,40 @@ class MoviesController < ApplicationController
   end
 
   def index
-    session.update(params)
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    if (params[:sort]==nil or params[:ratings]==nil) and (session[:sort] != nil or session[:ratings] != nil) then
-      flash.keep
-      redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]}) and return
-    end
-    
-    if session[:sort].present? then
-      if session[:sort] == 'title' then
-        if session[:ratings].present? then
-          @movies = Movie.where(rating: session[:ratings].keys).order('title ASC')
+
+    if params[:sort].present? then
+      if params[:sort] == 'title' then
+        session[:sort] = params[:sort]
+        if params[:ratings].present? then
+          @movies = Movie.where(rating: params[:ratings].keys).order('title ASC')
+          session[:ratings] = params[:ratings]
+        elsif session[:ratings].present? then
+          redirect_to movies_path(session)
         else
           @movies = Movie.order('title ASC')
         end
         @hilite_t = 'hilite'
-      elsif session[:sort] == 'release_date' then
-        if session[:ratings].present? then
-          @movies = Movie.where(rating: session[:ratings].keys).order('release_date')
+      elsif params[:sort] == 'release_date' then
+        session[:sort] = params[:sort]
+        if params[:ratings].present? then
+          @movies = Movie.where(rating: params[:ratings].keys).order('release_date')
+          session[:ratings] = params[:ratings]
+        elsif session[:ratings].present? then
+          redirect_to movies_path(session)
         else
           @movies = Movie.order('release_date')
         end
         @hilite_rd = 'hilite'
       end
     else
-      if session[:ratings].present? then
+      if params[:ratings].present? then
         @selectedratings = params[:ratings].keys
         @movies = Movie.where(rating: session[:ratings].keys)
+        session[:ratings] = params[:ratings]
+      elsif session[:ratings].present? then
+          redirect_to movies_path(session)
       else
         @movies = Movie.all
       end
