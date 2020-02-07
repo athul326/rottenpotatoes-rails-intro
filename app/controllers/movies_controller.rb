@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
     
     @movies = Movie.order(@sort)
     if @rate.present? then
-      @movies = Movie.where(:ratings => @rate.keys).order(@sort)
+      @movies = Movie.where(:rating => @rate.keys).order(@sort)
       @selectedratings = @rate.keys
     
     end
