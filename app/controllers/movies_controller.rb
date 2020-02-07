@@ -19,20 +19,29 @@ class MoviesController < ApplicationController
       redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]})
     end
     
-    if session[:ratings]
+    if session[:ratings].present?
       @selectedratings = session[:ratings].keys
       @movies = Movie.where(rating: session[:ratings].keys)
+    end
+    if session[:sort].present?
+      if session[:sort] == 'title'
+        if session[:ratings].present?
+          @movies = Movie.where(rating: session[:ratings].keys).order('title ASC')
+        else
+          @movies = Movie.order('title ASC')
+        end
+      @hilite_t = 'hilite'
+      end
+      if session[:sort] == 'release_date'
+        if session[:ratings].present?
+          @movies = Movie.where(rating: session[:ratings].keys).order('release_date')
+        else
+          @movies = Movie.order('release_date')
+        end
+        @hilite_rd = 'hilite'
+      end
     else
       @movies = Movie.all
-    end
-    
-    if session[:sort] == 'title'
-      @movies = Movie.where(rating: session[:ratings].keys).order('title ASC')
-      @hilite_t = 'hilite'
-    end
-    if session[:sort] == 'release_date'
-      @movies = Movie.where(rating: session[:ratings].keys).order('release_date')
-      @hilite_rd = 'hilite'
     end
   end
 
