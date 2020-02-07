@@ -13,44 +13,27 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    
     if params[:sort].present? then
       if params[:sort] == 'title' then
-        session[:sort] = params[:sort]
-        if params[:ratings].present? then
-          @movies = Movie.where(rating: params[:ratings].keys).order('title ASC')
-          session[:ratings] = params[:ratings]
-        elsif session[:ratings].present? then
-          redirect_to movies_path(session)
-        else
-          @movies = Movie.order('title ASC')
-        end
-        @hilite_t = 'hilite'
+        @movies = Movie.order('title ASC')
       elsif params[:sort] == 'release_date' then
-        session[:sort] = params[:sort]
-        if params[:ratings].present? then
-          @movies = Movie.where(rating: params[:ratings].keys).order('release_date')
-          session[:ratings] = params[:ratings]
-        elsif session[:ratings].present? then
-          redirect_to movies_path(session)
-        else
-          @movies = Movie.order('release_date')
-        end
-        @hilite_rd = 'hilite'
+        @movies = Movie.order('release_date')
       end
-    else
-      if session[:sort].present? then
-        redirect_to movies_path(session)
-      if params[:ratings].present? then
-        @selectedratings = params[:ratings].keys
-        @movies = Movie.where(rating: params[:ratings].keys)
-        session[:ratings] = params[:ratings]
-      elsif session[:ratings].present? then
-          redirect_to movies_path(session)
-      else
-        @movies = Movie.all
-      end
+      session[:sort] = params[:sort]
+    elsif session[:sort].present? then
+      redirect_to movies_path(session)
     end
+    
+    if params[:rating].present? then
+      @selectedratings = params[:ratings].keys
+      @movies = Movie.where(rating: params[:ratings].keys)
+      session[:rating] = params[:rating]
+    elsif session[:rating].present? then
+      redirect_to movies_path(session)
+    else
+      @movies = Movie.where(rating: all_ratings).order(params[:sort])
+    end
+    
   end
 
   def new
