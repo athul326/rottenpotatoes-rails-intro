@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
       end
       session[:sort] = params[:sort]
     elsif session[:sort].present? then
-      redirect_to movies_path(session)
+      redirect_to movies_path(params.merge(session))
     end
     
     if params[:rating].present? then
@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
       @movies = Movie.where(rating: params[:ratings].keys)
       session[:rating] = params[:rating]
     elsif session[:rating].present? then
-      redirect_to movies_path(session)
+      redirect_to movies_path(params.merge(session))
     else
       @movies = Movie.where(rating: @all_ratings).order(params[:sort])
     end
