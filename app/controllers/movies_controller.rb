@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
     @selectedratings = @all_ratings
     if (params[:sort]==nil or params[:ratings]==nil) and (session[:sort] != nil or session[:ratings] != nil) then
       flash.keep
-      redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]})
+      redirect_to movies_path({:sort=>session[:sort],:ratings=>session[:ratings]}) and return
     end
     
     if session[:sort].present? then
@@ -37,7 +37,7 @@ class MoviesController < ApplicationController
       end
     else
       if session[:ratings].present? then
-        @selectedratings = session[:ratings].keys
+        @selectedratings = params[:ratings].keys
         @movies = Movie.where(rating: session[:ratings].keys)
       else
         @movies = Movie.all
