@@ -13,7 +13,7 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-
+    
     if params[:sort].present? then
       if params[:sort] == 'title' then
         session[:sort] = params[:sort]
@@ -39,6 +39,8 @@ class MoviesController < ApplicationController
         @hilite_rd = 'hilite'
       end
     else
+      if session[:sort].present? then
+        redirect_to movies_path(session)
       if params[:ratings].present? then
         @selectedratings = params[:ratings].keys
         @movies = Movie.where(rating: params[:ratings].keys)
