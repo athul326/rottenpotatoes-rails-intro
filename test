@@ -1,0 +1,497 @@
+[33mcommit 6c77ea96eb9e1f9e6a04b746d6150fc328d75519[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Feb 7 04:40:31 2020 +0000
+
+    part 3 initial
+
+[33mcommit 8a78b8cb995f5daaacd0d17e90392685cf828000[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Feb 7 04:36:22 2020 +0000
+
+    part 3 initial
+
+[33mcommit eac959f5be72cc02fcda212099de5530a7cf292f[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Feb 7 03:47:49 2020 +0000
+
+    part 3 initial
+
+[33mcommit 4c54ba43290746aece99d82ff0eb8218c84d6c2a[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:43:13 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 107891923dde8a7d3eafb451f097be055ce515fd[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:39:40 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 06a619a6137c339c6e83e7c4b7a54b5d87cd6fc2[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:37:56 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 3ed5acf526a1f923b8b0dd0865d7883dde0de538[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:34:37 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit a060f4bb46124c7c45f851d05cf8e6cc880552c1[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:30:24 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 6f1ab56f849378e05abae62ca749902474291ef2[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:14:09 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 6648be87df3d76b535a17d334906a866806188e7[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:12:39 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit a9f6e7949523ced134d35300ca30cda044d0b138[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:10:06 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 58f23ceceda14dc575a7bd5b5d45fca389cdb1aa[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:08:39 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 39b4b4afe875952bb8b25bdacabf043b5ac404ba[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:06:26 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit e60327343da20dc3d17c699a6e504e79ae9d80f8[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:04:43 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit 5c441cf92a49b08cc331d463a48d4e68e580c9b2[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 21:02:31 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit b4fbac72cd632af48fb15d04c72a1e2358bed031[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:49:53 2020 +0000
+
+    part 2 checkbox
+
+[33mcommit c3117d2e9e5bda71224f46efe0014eeba57643e8[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:37:54 2020 +0000
+
+    part 2 setup
+
+[33mcommit f300b302fbe3db4e3905370508a1381d094ecd7e[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:35:22 2020 +0000
+
+    part 2 setup
+
+[33mcommit 80f04e5ee6c7150003dd25fc65bb9f62454fa29e[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:31:13 2020 +0000
+
+    part 2 setup
+
+[33mcommit 51ff87f61b66406cf4146d09f91f24c6e535ff9c[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:15:58 2020 +0000
+
+    hilite
+
+[33mcommit 571fcb0d642e0a10ec06472746a9a8e2fdbe86d4[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Wed Feb 5 20:12:29 2020 +0000
+
+    hilite
+
+[33mcommit 48bfb7624766a13dab5ba618f51021010ae3fc3c[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 20:56:50 2020 +0000
+
+    fix 2
+
+[33mcommit 13de841a83f43eacea2f8a879efda2e12aaeab98[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 20:51:48 2020 +0000
+
+    fix 1
+
+[33mcommit a16c416506bfccd4e83ceede3edbd2fdbdbb80b4[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 20:10:51 2020 +0000
+
+    link test fixed
+
+[33mcommit dc4e01abc2611d05e132ebb458fb63038d126323[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 20:04:48 2020 +0000
+
+    link test 3
+
+[33mcommit d8508d8d65742613d3e78c524e88da861bd253ea[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 19:56:16 2020 +0000
+
+    link test 3
+
+[33mcommit 47ae07a4b797feabe13db03309b37b55d0c28602[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 19:48:32 2020 +0000
+
+    link test 2
+
+[33mcommit e5ee10902b25a8ac2c12c42fc41180dda01e23d2[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Fri Jan 31 19:43:23 2020 +0000
+
+    link test
+
+[33mcommit 6ce3b431a98801c0aace720cca78b27285412c03[m
+Author: EC2 Default User <ec2-user@ip-172-31-93-182.ec2.internal>
+Date:   Sat Jan 25 03:34:27 2020 +0000
+
+    init
+
+[33mcommit 94347a7eda52484870f408e35233f106810f8c59[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jeremywrnr <jeremywrnr@users.noreply.github.com>
+Date:   Sun Oct 13 18:53:38 2019 -0700
+
+    tzinfo windows (#36)
+    
+    * Updating Gemfile with tz-info for windows students
+    
+    * adding tzinfo, required for windows users
+
+[33mcommit 9f9237ede032ca0c53a70ae7ee1dd9fa50130454[m
+Merge: d62f2b1 bfbbc0d
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Mon Aug 26 13:18:57 2019 -0700
+
+    Merge pull request #34 from srujayk/bootstrap
+    
+    Created a new Bootstrap-based design for the Rotten Potatoes site.
+
+[33mcommit bfbbc0d27fd8621fd9db13ed7885e70b2be2773d[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Tue Aug 20 08:13:15 2019 -0700
+
+    Re-added #movies ID to table causing it to fail autograder tests.
+
+[33mcommit 4ccbe3b39abb3baededb7eaef017163e7ee645b3[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Tue Jun 25 01:50:42 2019 -0700
+
+    Added Bootstrap button styling to views, updated filter screenshot with new design.:
+
+[33mcommit 2b392b319406f4a2030e33b25d16ff004a94329c[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Mon Jun 24 21:56:42 2019 -0700
+
+    Updated screenshot for part 1 (table headers)
+
+[33mcommit 5fdcf4e0dcbc267a66bae10aa32218fd9ea3f657[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Mon Jun 24 21:41:04 2019 -0700
+
+    Reworded instructions to be more unambiguous.
+
+[33mcommit 176563c1c897f6c8be15dba9be6d6aba15370ccd[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Mon Jun 24 21:20:44 2019 -0700
+
+    Altered instructions for Part 1 to use Bootstrap Colors instead of custom CSS.
+
+[33mcommit 1b83f872d83a88a59f39214b2466b3196ad1568a[m
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Mon Jun 24 21:18:54 2019 -0700
+
+    Added container div to layout and changed table styling.
+
+[33mcommit 93446ba366aa30d23e93489bf47c07eacb89209a[m
+Merge: 1b22820 f8d7f63
+Author: Srujay Korlakunta <srujayk@gmail.com>
+Date:   Mon Jun 24 21:14:08 2019 -0700
+
+    Merge branch 'bootstrap' of https://github.com/srujayk/rottenpotatoes-rails-intro into bootstrap
+
+[33mcommit 1b22820436e2d6f6ad9917ae76fc4ed12b463ba9[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 16:20:21 2019 -0800
+
+    Revert "Revert "changed all styles to bootstrap""
+    
+    This reverts commit 3a109f4e7da6e965435b12683bdf68d3b040e518.
+
+[33mcommit d62f2b12f547bc8125f42d3e71e61c731433d229[m
+Merge: c29f5f4 923f603
+Author: An Ju <an_ju@berkeley.edu>
+Date:   Fri Feb 15 12:47:46 2019 -0800
+
+    Merge pull request #31 from saasbook/update-instructions
+    
+    Move instructions to this repository
+
+[33mcommit 923f603e7071db97262105b0cbd32de89666dc76[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Thu Feb 14 13:43:15 2019 -0800
+
+    Complete the remote location.
+
+[33mcommit d458b5301abd2879fcd43d1538094b80f183c88b[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 22:48:06 2019 -0800
+
+    fixed a path error.
+
+[33mcommit ffd8c5f298f6e7774db19a2940609711fa6cd429[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 22:47:01 2019 -0800
+
+    fixed a format error.
+
+[33mcommit 8aae4a817cfe0fb17241f2b3994f6aa8556a4342[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 22:45:27 2019 -0800
+
+    Merged two repositories and updated the instructions.
+
+[33mcommit f8d7f63b32dd5ccf5a2e9cd7ac44d3ddc00b6c9e[m[33m ([m[1;31morigin/bootstrap[m[33m)[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 16:20:21 2019 -0800
+
+    Revert "Revert "changed all styles to bootstrap""
+    
+    This reverts commit 3a109f4e7da6e965435b12683bdf68d3b040e518.
+
+[33mcommit c29f5f4b482efc888acf6676a03212f2b1a1729d[m
+Merge: cd77be9 3a109f4
+Author: An Ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 16:16:54 2019 -0800
+
+    Merge pull request #30 from saasbook/reverse-css-updates
+    
+    Revert "changed all styles to bootstrap"
+
+[33mcommit 3a109f4e7da6e965435b12683bdf68d3b040e518[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 16:15:15 2019 -0800
+
+    Revert "changed all styles to bootstrap"
+    
+    This reverts commit 1539ab0fa576821b92d2d38df292accb04f6f7ea.
+
+[33mcommit cd77be93e777d68200f8d474f8b1903913119939[m
+Merge: 858bd81 f560c29
+Author: An Ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 14:29:43 2019 -0800
+
+    Merge pull request #29 from saasbook/update-ruby-version
+    
+    use ruby version 2.2-3.0
+
+[33mcommit f560c29873f5d934fe6ebd82c6c6521d0faa5977[m
+Author: an-ju <an_ju@berkeley.edu>
+Date:   Wed Feb 13 14:28:38 2019 -0800
+
+    update ruby version to be compactable with 2.2-3.0
+
+[33mcommit 858bd814d6ac823ff692f8330a476d8d4ebf5109[m
+Merge: 39ebb84 1539ab0
+Author: Adnan Hemani <adnan.h@berkeley.edu>
+Date:   Mon Feb 11 20:19:19 2019 -0800
+
+    Merge pull request #26 from adnanhemani/sp19/bootstrap
+    
+    Changed all stylesheets to Bootstrap CDN
+
+[33mcommit 1539ab0fa576821b92d2d38df292accb04f6f7ea[m
+Author: Adnan Hemani <ahemani@Adnans-MacBook-Pro.local>
+Date:   Sat Jan 19 03:30:09 2019 -0600
+
+    changed all styles to bootstrap
+
+[33mcommit 39ebb848cb625bc8cdd18da54e1b10421de2b7f8[m
+Merge: 691b8ea edf5838
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Fri Jul 13 18:27:14 2018 +0100
+
+    Merge pull request #22 from saasbook/ruby_2_4
+    
+    Upgrade to Ruby 2.4
+
+[33mcommit edf58381db605d6df064bcd3469bbbed4ec45db4[m[33m ([m[1;31morigin/ruby_2_4[m[33m)[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Mon Jun 25 10:07:49 2018 +0100
+
+    Update todo.md
+
+[33mcommit 97e561a873af14eae932ec306e85742d68432acf[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Fri Jun 15 16:08:54 2018 +0100
+
+    Update todo.md
+
+[33mcommit cd0e742d01c0a549f469a8ce049603adc081bd12[m
+Merge: c3f1325 c977873
+Author: Sam Joseph <tansaku+c9test@gmail.com>
+Date:   Fri Jun 15 14:54:42 2018 +0000
+
+    Merge branch 'ruby_2_4' of https://github.com/saasbook/rottenpotatoes-rails-intro into ruby_2_4
+
+[33mcommit c3f13258afa4264829a808c219ad35320284e08d[m
+Author: Sam Joseph <tansaku+c9test@gmail.com>
+Date:   Fri Jun 15 14:49:37 2018 +0000
+
+    lock to pg 0.21
+
+[33mcommit c977873570618bdd3511141a9bdf61ddb8f813cc[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Fri May 25 16:13:17 2018 +0100
+
+    Update todo.md
+
+[33mcommit 45e6dc522f7ee31b78fc30bd3d27a31a4d90acd8[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Fri May 25 16:11:29 2018 +0100
+
+    Create todo.md
+
+[33mcommit 1a05123706a19cedef62899bc43a3abf9e3fa576[m
+Author: Sam Joseph <tansaku+c9test@gmail.com>
+Date:   Fri May 25 14:51:12 2018 +0000
+
+    upgraded to ruby 2.4 and rails 4.2.10
+
+[33mcommit 691b8ea7b74fbb43fd7e39d060839d27f52011e4[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Wed Aug 30 13:28:59 2017 -0700
+
+    Update README.md
+
+[33mcommit 631e618a397cffd3ebaf714dbf91ead5089403b2[m
+Author: Sam Joseph <sam@neurogrid.com>
+Date:   Thu Jun 23 09:52:00 2016 +0000
+
+    updates Gemfile.lock to Rails 4.2.6 and Ruby 2.3.0
+
+[33mcommit 96c47115336cea805c074b46ed20031d3da5970a[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Thu Jun 23 10:48:22 2016 +0100
+
+    Update Gemfile
+
+[33mcommit 112df68e7abaa3af692dd0c85fa3f97e7023b637[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Thu Jun 23 10:47:48 2016 +0100
+
+    Update README.md
+
+[33mcommit 8ffc62010b6c2ea3eab9eb3d3bd348af32f487bd[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Thu Jun 23 10:46:10 2016 +0100
+
+    Update README.md
+
+[33mcommit 93359351350e1547889ec4c3365a665dfe02fc75[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sun Apr 3 16:34:24 2016 -0700
+
+    update README
+
+[33mcommit cfadc3d03d128e36e6050d26b3aa957c3ee0c5db[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sun Apr 3 16:28:21 2016 -0700
+
+    updated Gemfile to fix hard error: dependency on a yanked version of rb-inotify
+
+[33mcommit e01e1c6aec509d8fdcb9ea0b80dda0bd3cf3a8c6[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sun Apr 3 16:15:43 2016 -0700
+
+    add README
+
+[33mcommit 44944438d0666bb79575c4dd0b049cee6267bb4c[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sun Apr 3 16:08:26 2016 -0700
+
+    use Guard rather than autotest; version initial schema.rb
+
+[33mcommit acd6bb2bbdbbe808b22c126ddfa908cf8f41f11d[m
+Merge: dace648 631f137
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Mon Nov 9 04:49:10 2015 -0800
+
+    Merge pull request #5 from patmbolger/add-root-route
+    
+    added root route
+
+[33mcommit 631f13738d220bd093579cfdcce9ef6ec10a5f56[m
+Author: Patrick Bolger <patmbolger@gmail.com>
+Date:   Mon Nov 9 07:40:51 2015 -0500
+
+    added root route
+
+[33mcommit dace64846f2b293cc2e2461d323539e881fac923[m
+Merge: dd61964 a359297
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Thu Oct 15 09:11:13 2015 -0700
+
+    Merge pull request #2 from tansaku/master
+    
+    Update Gemfile
+
+[33mcommit a3592979bfda85383aae53ea993e245379e26e0b[m
+Author: Sam Joseph <tansaku@gmail.com>
+Date:   Tue Sep 29 15:29:33 2015 +0100
+
+    Update Gemfile
+
+[33mcommit dd619646ef5737dd974f2cfde1a599ee69d002c3[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Fri Aug 28 16:09:42 2015 -0700
+
+    lock Ruby to 2.2.2 in Gemfile
+
+[33mcommit d8d8098dbb8a4a08c89f7ba781cac11640ae7fb0[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sat Aug 8 19:35:23 2015 -0700
+
+    skeleton ready
+
+[33mcommit f3d6e1e8552651a12be88faac7c133649ded1b71[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sat Aug 8 19:30:05 2015 -0700
+
+    added Haml, resourceful routes
+
+[33mcommit 2d813348035b8d87eb4a30e0b73d8dd1b67abcbe[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sat Aug 8 19:24:10 2015 -0700
+
+    adding base files from rottenpotatoes app
+
+[33mcommit 49bf4c4af62a4663753b10a80da1f60ceaaeb607[m
+Author: Armando Fox <fox@cs.berkeley.edu>
+Date:   Sat Aug 8 19:17:58 2015 -0700
+
+    Version usable with hw-rails-intro

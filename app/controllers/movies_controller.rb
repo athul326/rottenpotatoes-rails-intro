@@ -18,10 +18,11 @@ class MoviesController < ApplicationController
     
     
     if (!params[:ratings].present? && session[:ratings].present?) || (!params[:sort].present? && session[:sort].present?)
-      if session[:ratings].present?
+      if session[:ratings].present? && session[:sort].present?
+        hash = {:ratings => session[:ratings],:sort => session[:sort]}
+      elsif session[:ratings].present?
         hash = {:ratings => session[:ratings]}
-      end
-      if session[:sort].present?
+      elsif session[:sort].present?
         hash = {:sort => session[:sort]}
       end
       flash.keep
