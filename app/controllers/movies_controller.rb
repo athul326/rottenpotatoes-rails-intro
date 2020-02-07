@@ -22,14 +22,16 @@ class MoviesController < ApplicationController
     if session[:ratings]
       @selectedratings = session[:ratings].keys
       @movies = Movie.where(rating: session[:ratings].keys)
+    else
+      @movies = Movie.all
     end
     
     if session[:sort] == 'title'
-      @movies = Movie.order('title ASC')
+      @movies = Movie.where(rating: session[:ratings].keys).order('title ASC')
       @hilite_t = 'hilite'
     end
     if session[:sort] == 'release_date'
-      @movies = Movie.order('release_date')
+      @movies = Movie.where(rating: session[:ratings].keys).order('release_date')
       @hilite_rd = 'hilite'
     end
   end
