@@ -27,8 +27,6 @@ class MoviesController < ApplicationController
     else
       @rate = params[:ratings]
     end
-    #@sort = params[:sort] || session[:sort]
-    #@rate = params[:ratings] || session[:ratings]
     session[:sort] = @sort
     session[:ratings] = @rate
     
