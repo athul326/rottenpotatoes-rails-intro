@@ -13,8 +13,22 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = ['G','PG','PG-13','R','NC-17']
     @selectedratings = @all_ratings
-    @sort = params[:sort] || session[:sort]
-    @rate = params[:ratings] || session[:ratings]
+    if params[:sort].present? then
+      @sort = params[:sort]
+    elsif session[:sort].present? then
+      @sort = session[:sort]
+    else
+      @sort = params[:sort]
+    end
+    if params[:ratings].present? then
+      @rate = params[:ratings]
+    elsif session[:ratings].present? then
+      @rate = session[:ratings]
+    else
+      @rate = params[:ratings]
+    end
+    #@sort = params[:sort] || session[:sort]
+    #@rate = params[:ratings] || session[:ratings]
     session[:sort] = @sort
     session[:ratings] = @rate
     
@@ -23,7 +37,11 @@ class MoviesController < ApplicationController
     if @rate.present? then
       @movies = Movie.where(:rating => @rate.keys).order(@sort)
       @selectedratings = @rate.keys
-    
+    end
+    if @sort == "title" then
+      @hilite_t = 'hilite'
+    elsif @sort == 'release_date' then
+      @hilite_rd = 'hilite'
     end
     
   end
